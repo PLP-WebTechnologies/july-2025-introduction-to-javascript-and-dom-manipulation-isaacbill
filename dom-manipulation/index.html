@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🛍️ Mini Shopping Cart</h1>
+
+  <!-- Part 1: Age check -->
+  <section id="part1">
+    <h2>Check Age Eligibility</h2>
+    <input type="number" id="userAge" placeholder="Enter your age">
+    <button onclick="checkAge()">Check</button>
+    <p id="ageResult"></p>
+  </section>
+
+  <!-- Part 2: Greeting -->
+  <section id="part2">
+    <h2>Welcome Message</h2>
+    <button onclick="showGreeting('Shopper')">Say Hello</button>
+    <p id="greeting"></p>
+  </section>
+
+  <!-- Part 3 & 4: Shopping Cart -->
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <div>
+      <input type="text" id="itemName" placeholder="Item name">
+      <input type="number" id="itemPrice" placeholder="Price">
+      <button id="addItemBtn">Add to Cart</button>
+    </div>
+
+    <ul id="cartList"></ul>
+    <p id="totalBill">Total: $0.00</p>
+
+    <!-- Discount Code -->
+    <div>
+      <input type="text" id="discountCode" placeholder="Enter discount code">
+      <button id="applyDiscountBtn">Apply Discount</button>
+      <p id="discountMsg"></p>
+    </div>
+  </section>
+
+  <!-- Countdown Example -->
+  <section id="countdownSec">
+    <h2>Event Countdown</h2>
+    <button onclick="countdown(5)">Countdown to Sale!</button>
+    <p id="countdownResult"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
